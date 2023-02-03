@@ -1,6 +1,6 @@
 package com.example.myapplication.kotlin
 
-fun main(array: Array<String>) {
+fun main(args: Array<String>) {
 
     val a = mutableListOf<Int>(1, 2, 3)
     a.add(4) // index 안넣으면 맨 뒤에다 넣음
