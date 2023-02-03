@@ -73,4 +73,26 @@ fun main(args: Array<String>) {
     for (i in 0..a.size) {
         println(i)
     }
+    println()
+
+//    반복하는 방법(11)
+    var b: Int = 0
+    var c: Int = 4
+
+    while (b < c) {
+//        while문의 내용물에 조건을 깨주는 코드가 반드시 들어가야한다.
+        b++ // while문을 정지 시키기 위한 코드
+        println("b")
+    }
+    println()
+
+    var d: Int = 0
+    var e: Int = 4
+//    반복하는 방법(12)
+    do {
+        println("hello")
+        d++
+        //조건이 깨지는 코드가 필요하다
+    } while (d < e) //조건이 만족하지 못하더라도 do 안의 내용은 적어도 한번 실행
+
 }
