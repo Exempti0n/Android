@@ -2,7 +2,7 @@ package com.example.myapplication.kotlin
 
 fun main(args: Array<String>) {
     first()
-    second(90)
+    println( second(90))
     third(52)
     gugudan()
 }
@@ -34,25 +34,23 @@ fun first() {
 // 2번 문제
 // 학점 구하기
 // 함수에 전수 전달하면 학점 반환
-// 80-90 -> A
-// 70-79 -> B
-// 60-69 -> C
+// 90-100 -> A
+// 80-89 -> B
+// 70-79 -> C
 // 나머지 F
-fun second(score: Int) {
-    if (score in 0..99) {
-        when (score) {
-            in 80..90 -> {
-                println("A")
-            }
-            in 70..79 -> {
-                println("B")
-            }
-            in 60..69 -> {
-                println("C")
-            }
-            else -> {
-                println("F")
-            }
+fun second(score: Int): String {
+    when (score) {
+        in 90..100 -> {
+            return "A"
+        }
+        in 80..89 -> {
+            return "B"
+        }
+        in 70..79 -> {
+            return "C"
+        }
+        else -> {
+            return "F"
         }
     }
 }
