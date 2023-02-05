@@ -2,7 +2,7 @@ package com.example.myapplication.kotlin
 
 fun main(args: Array<String>) {
     first()
-    println( second(90))
+    println(second(90))
     third(52)
     gugudan()
 }
@@ -14,18 +14,18 @@ fun main(args: Array<String>) {
 // 두번째 List에는 첫번째 List의 값을 하나씩 확인한 후
 // 짝수면 True 홀수면 False 출력
 fun first() {
-    val firstList = mutableListOf<Int>()
-    for (i in 1..9) {
-        firstList.add(i - 1, i)
+    val firstList = MutableList(9, { 0 })
+    for (i in 0..8) {
+        firstList[i] = i + 1
     }
     println(firstList)
 
-    val secondList = mutableListOf<String>()
-    for (i in 0 until firstList.size) {
-        if (firstList.get(i) % 2 == 0) {
-            secondList.add(i, "true")
+    val secondList = MutableList(firstList.size, { true })
+    firstList.forEachIndexed { index, value ->
+        if (value % 2 == 0) {
+            secondList[index] = true
         } else {
-            secondList.add(i, "false")
+            secondList[index] = false
         }
     }
     println(secondList)
