@@ -12,31 +12,32 @@
 
     <TextView
         android:id="@+id/view2"
+        right
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:background="#78D6E6"
-        right android:layout_toRightOf="@id/view1"/>
+        android:layout_toRightOf="@id/view1"
+        android:background="#78D6E6" />
 
     <TextView
         android:id="@+id/view3"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:background="#78D6E6"
-        android:layout_above="@id/view1">
+        android:layout_above="@id/view1"
+        android:background="#78D6E6" />
 
     <TextView
-        android:id="@+id/view3"
+        android:id="@+id/view4"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:background="#78D6E6"
-        android:layout_below="@id/view1">
+        android:layout_below="@id/view1"
+        android:background="#78D6E6" />
 
     <TextView
-        android:id="@+id/view3"
+        android:id="@+id/view5"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:background="#78D6E6"
         android:layout_toLeftOf="@id/view1"
+        android:background="#78D6E6" />
 
 
 </RelativeLayout>
