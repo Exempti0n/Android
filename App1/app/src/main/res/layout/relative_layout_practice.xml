@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:background="#FFBEBE" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/image1"
+        android:layout_toLeftOf="@id/image1"
+        android:background="#BEE5FF" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/image1"
+        android:layout_centerInParent="true"
+        android:background="#D2FFBE" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/image1"
+        android:layout_toRightOf="@id/image1"
+        android:background="#FDFFBE" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@id/image1"
+        android:background="#FFD7EC" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@id/image1"
+        android:background="#CAD1FF" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/image1"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@id/image1"
+        android:background="#B2FFC5" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/image1"
+        android:layout_centerInParent="true"
+        android:background="#FFEDB6" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/image1"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@id/image1"
+        android:background="#EBBDF8" />
+
+
+</RelativeLayout>
