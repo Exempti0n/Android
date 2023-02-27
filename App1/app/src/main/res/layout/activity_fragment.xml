@@ -26,6 +26,12 @@
         android:layout_height="wrap_content"
         android:text="나와라" />
 
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="사라져" />
+
     <LinearLayout
         android:background="#B3E5FC"
         android:id="@+id/container"
