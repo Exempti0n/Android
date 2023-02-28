@@ -6,7 +6,12 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentManager
 import com.example.app1.databinding.ActivityFragmentBinding
 
-class FragmentActivity : AppCompatActivity() {
+class FragmentActivity : AppCompatActivity(), FragmentOne.OnDataPassListener {
+
+    override fun onDataPass(data: String?) {
+        Log.d("pass", "" + data)
+    }
+
     private val binding by lazy { ActivityFragmentBinding.inflate(layoutInflater) }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
