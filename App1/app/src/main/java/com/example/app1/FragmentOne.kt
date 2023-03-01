@@ -6,6 +6,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import androidx.fragment.app.Fragment
 import com.example.app1.databinding.FragmentOneBinding
 
@@ -28,6 +29,7 @@ class FragmentOne : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         Log.d("life_cycle", "F onCreate")
         super.onCreate(savedInstanceState)
+
     }
 
     override fun onCreateView(
@@ -41,7 +43,9 @@ class FragmentOne : Fragment() {
 //        container -> 부모 뷰
         Log.d("life_cycle", "F onCreateView")
 
-        return inflater.inflate(R.layout.fragment_one, container, false)
+        val view = inflater.inflate(R.layout.fragment_one, container, false)
+
+        return view
 
     }
 
@@ -49,8 +53,11 @@ class FragmentOne : Fragment() {
         Log.d("life_cycle", "F onViewCreated")
         super.onViewCreated(view, savedInstanceState)
 
+        val button = view.findViewById<Button>(R.id.pass)
+
         // Activity의 OnCreate에서 했던 작업을 여기서 한다
-        binding.pass.setOnClickListener {
+        button.setOnClickListener {
+            Log.d("button", "button tapped")
             dataPassListener.onDataPass("Good bye")
         }
     }
@@ -58,7 +65,7 @@ class FragmentOne : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         Log.d("life_cycle", "F onActivityCreated")
 
-        val data = arguments!!.getString("hello")
+        val data = arguments?.getString("hello")
         Log.d("data", data!!)
 
         super.onActivityCreated(savedInstanceState)
